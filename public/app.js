@@ -103,14 +103,14 @@ fetch("/login/showCart").then((res)=>{
     console.log(res2.length);
     if(res2.length==0){
       const card = document.createElement('div');
-      const content=`
+      const content=`<center>
       <div class="card bg-dark text-white">
       <img src=".//images/noItems.jpg" class="card-img" alt="...">
       <div class="card-img-overlay">
         <h1 class="card-title"></h1>
         <p class="card-text"><h1>No Items Added in the cart</h1></p>
       </div>
-    </div>`;
+    </div></center>`;
     document.getElementById('container1').innerHTML += content;
     document.body.appendChild(sheet3);
     document.body.appendChild(sheet2);
